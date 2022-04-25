@@ -1,0 +1,2 @@
+class EmployeeLeafe < ApplicationRecord
+end

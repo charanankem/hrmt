@@ -1,0 +1,75 @@
+.login-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.login-sub-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+
+.login-heading {
+  margin-bottom: 20px;
+  font-family: Arial;
+  text-align: center;
+}
+
+.login-portal-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.forgot-password-link {
+  
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+  font-family: Arial;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.field {
+  margin-bottom: 15px;
+}
+
+.session-login-button {
+  margin-bottom: 20px;
+  text-decoration: none;
+  background-color: #008CBA;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  font-family: Arial;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  
+}
+.lable {
+  font-weight: bold;
+  color: #635f55;
+  
+}
+.input {
+  border-radius: 3px;
+  border: 2px solid;
+  height: 22px;
+}
+
+
+
