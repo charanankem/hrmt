@@ -1,0 +1,18 @@
+<div class="navbar-sub-container">
+    <div class="title-container">
+      <a href="/">
+        <img class="logo" src="https://zensark.com/zensark2/wp-content/uploads/2021/01/Asset-16.png"/>
+      </a>
+    </div>
+    <div class="buttons-container">
+      <% if current_employee %>
+        <%= button_to "Logout", destroy_employee_session_path, class: "logout", method: :delete%>
+      <% else%>
+        <% if request.path.split("/").last == 'sign_in' || request.path.split("/").last == 'sign_in?' %>
+        <% else %>
+          <%= button_to "sign in", new_employee_session_path, class: "signin-button", method: :get %>
+        <% end%>
+        <%= button_to "Create an account", new_employee_registration_path, class: "create-account-button", method: :get %>
+      <%end%>
+    </div>
+</div>

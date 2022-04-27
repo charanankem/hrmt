@@ -5,12 +5,12 @@
 
   <div class="field">
     <%= f.label :first_name %><br />
-    <%= f.text_field :first_name, autofocus: true, autocomplete: "email" %>
+    <%= f.text_field :first_name, autofocus: true, autocomplete: "first-name" %>
   </div>
 
   <div class="field">
     <%= f.label :last_name %><br />
-    <%= f.text_field :last_name, autofocus: true, autocomplete: "email" %>
+    <%= f.text_field :last_name, autofocus: true, autocomplete: "last-name" %>
   </div>
 
   <div class="field">
@@ -19,13 +19,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :employee_id %><br />
-    <%= f.number_field :employee_id, autofocus: true, autocomplete: "email" %>
+    <%= f.label :employee_id, "Employe Id" %><br />
+    <%= f.number_field :employee_id, autofocus: true, autocomplete: "employee-id" %>
   </div>
 
   <div class="field">
-    <%= f.label :role_id %><br />
-    <%= f.number_field :role_id, autofocus: true, autocomplete: "email" %>
+    <%= f.label :role_id, "Role Id" %><br />
+    <%= f.number_field :role_id, autofocus: true, autocomplete: "role-id" %>
   </div>
 
   <div class="field">

@@ -1,15 +1,22 @@
-<div class="navbar-sub-container">
-    <div class="title-container">
-      <a href="/">
-        <img class="logo" src="https://zensark.com/zensark2/wp-content/uploads/2021/01/Asset-16.png"/>
-      </a>
-    </div>
-    <div class="buttons-container">
-      <% if current_employee %>
-        <%= button_to "Logout", destroy_employee_session_path, class: "logout", method: :delete%>
-      <% else%>
-        <%= button_to "sign in", new_employee_session_path, class: "signin-button", method: :get %>
-        <%= button_to "Create an account", new_employee_registration_path, class: "create-account-button", method: :get %>
-      <%end%>
-    </div>
-</div>
+<nav class="navbar navbar-dark fixed-top bg-dark">
+  <div class="navigation-cutom-items">
+    <a class="navbar-brand ml-5" href="/">
+      ZT
+    </a>
+    <% if current_employee %>
+      <div class="dropstart">
+        <button class="round-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          dv
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li class="text-center"><%= button_to "Logout", destroy_employee_session_path, class: "btn btn-secondary", method: :delete%></li>
+        </ul>
+      </div>
+    <% else%>
+      <%= button_to "sign in", new_employee_session_path, class: "btn btn-outline-light mr-5", method: :get %>
+    <%end%>
+  </div>
+</nav>

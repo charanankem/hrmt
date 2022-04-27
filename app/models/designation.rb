@@ -1,3 +1,3 @@
 class Designation < ApplicationRecord
-  has_many: :employee, through: => :employee_details
+  has_many :employees, through: :employee_details
 end
