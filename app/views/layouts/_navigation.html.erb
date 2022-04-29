@@ -1,22 +1,28 @@
-<nav class="navbar navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-light bg-light">
   <div class="navigation-cutom-items">
     <a class="navbar-brand ml-5" href="/">
-      ZT
+      <img class="zensark-logo" src="https://zensark.com/zensark2/wp-content/uploads/2021/01/Asset-16.png">
     </a>
     <% if current_employee %>
-      <div class="dropstart">
-        <button class="round-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          dv
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-          <li class="text-center"><%= button_to "Logout", destroy_employee_session_path, class: "btn btn-secondary", method: :delete%></li>
-        </ul>
+      <div class="profile-container">
+        <p class="profile-name">Manchala Divakar</p>
+        <div class="dropdown">
+          <button class="round-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="profile-image" alt="dv" src="https://lh3.googleusercontent.com/ogw/ADea4I4lyuyIa0eZqz6wgpPJqJxijXM9RcK2oapYpm6T=s32-c-mo">
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Adminstration</a></li>
+            <li><a class="dropdown-item" href="#">Manager</a></li>
+            <li><%= button_to "Logout", destroy_employee_session_path, class: " dropdown-item btn btn-secondary", method: :delete%></li>
+          </ul>
+        </div>
       </div>
     <% else%>
-      <%= button_to "sign in", new_employee_session_path, class: "btn btn-outline-light mr-5", method: :get %>
+    <% if request.path.split("/").last == 'sign_in' || request.path.split("/").last == 'sign_in?' %>
+      <%= button_to "Home", root_path, class: "btn btn-outline-dark", method: :get %>
+    <% else %>
+      <%= button_to "sign in", new_employee_session_path, class: "btn btn-outline-dark mr-5", method: :get %>
+    <% end%>
     <%end%>
   </div>
 </nav>

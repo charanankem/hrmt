@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+https://chartkick.com/
+
+https://github.com/rails/importmap-rails
+
+https://github.com/ankane/groupdate#additional-instructions

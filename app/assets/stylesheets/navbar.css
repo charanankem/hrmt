@@ -1,24 +1,45 @@
 .navigation-cutom-items {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   margin-left: 20px;
   margin-right: 20px;
 }
 
+.navbar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .round-button {
   border: none;
-  background-color: white;
-  color: black;
+  color: white;
   font-weight: bold;
   border-radius: 100px;
   height: 40px;
   width: 40px;
+  margin-left: 5px;
 }
 
-.dropstart {
-  margin-right: 0px !important;
+.dropdown-menu {
+  margin-left: -150px !important;
 }
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-name {
+  margin: 0px;
+  font-weight: bold;
+}
+
+.zensark-logo {
+  height: 35px;
+}
+
+
 
 .signin-button {
   margin-right: 10px;
@@ -48,4 +69,10 @@
   padding-bottom: 8px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.profile-image {
+  height: 25px;
+  width: 25px;
+  border-radius: 100px;
 }

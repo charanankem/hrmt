@@ -1,3 +1,3 @@
 class Attendance < ApplicationRecord
-  belogns_to :employee
+  belongs_to :employee
 end
